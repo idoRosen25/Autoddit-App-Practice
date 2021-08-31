@@ -1,0 +1,47 @@
+{
+    "1":{
+        "title":"Childish Gambino - This Is America",
+        "link":"https://www.youtube.com/watch?v=VYOjWnS4cMY",
+        "image":"https://i.ytimg.com/vi/VYOjWnS4cMY/maxresdefault.jpg",
+        "date":1630072227452,
+        "user":"Ido Rosenblum",
+        "upVotes":12,
+        "comments":[3]
+    },
+    "2":{
+        "title":"The Rolling Stones - Sympathy For The Devil",
+        "link":"https://www.youtube.com/watch?v=Jwtyn-L-2gQ",
+        "image":"https://i1.sndcdn.com/artworks-000282759929-p3d5tn-t500x500.jpg",
+        "date":1630072227452,
+        "user":"Ido Rosenblum",
+        "upVotes":50,
+        "comments":[]
+    },
+    "3":{
+        "title":"The White Stripes - Seven Nation Army",
+        "link":"https://www.youtube.com/watch?v=0J2QdDbelmY",
+        "image":"https://m.media-amazon.com/images/M/MV5BMmZlNTFmMzUtN2RjMC00Y2E3LTg4NTctYmUxZGEyYWExODMzXkEyXkFqcGdeQXVyMzUyOTAyMA@@._V1_.jpg",
+        "date":1630072227452,
+        "user":"Ido Rosenblum",
+        "upVotes":0,
+        "comments":[]
+    },
+    "4":{
+        "title":"Talking Heads - Psycho Killer",
+        "link":"https://www.youtube.com/watch?v=CKti7QixnJI",
+        "image":"https://upload.wikimedia.org/wikipedia/en/d/dc/Talking_heads_psycho_killer_USA_vinyl.jpg",
+        "date":1630072227452,
+        "user":"Ido Rosenblum",
+        "upVotes":16,
+        "comments":[]
+    },
+    "5":{
+        "title":"Gorillaz - Clint Eastwood",
+        "link":"https://www.youtube.com/watch?v=1V_xRb0x9aw",
+        "image":"https://i.pinimg.com/originals/4a/d7/4a/4ad74a3c09b8756113668ac2713336d6.jpg",
+        "date":1630072227452,
+        "user":"Ido Rosenblum",
+        "upVotes":20,
+        "comments":[]
+    }
+}

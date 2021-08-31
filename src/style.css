@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*DESKTOP CSS ONLY*/
+@media only screen and (min-width: 850px) {
+  /* Login Page CSS */
+
+  .loginContainer {
+    display: block;
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
+  .loginForm {
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 7px grey;
+  }
+  .loginLabel {
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+  }
+  .loginInput {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    width: 30%;
+    border-radius: 5px;
+    padding: 0.5%;
+  }
+  .loginActionBtn {
+    font-size: 1.5rem;
+    width: 15%;
+    border-radius: 5px;
+    padding: 0.5% 0;
+  }
+
+  /* NAVBAR CSS */
+
+  .myNav {
+    height: 10vh;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 0 15%;
+    position: sticky;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .navItem {
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navItemLink {
+    display: flex;
+    width: max-content;
+    margin-left: 3%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 1%;
+  }
+  .navItemLink > * {
+    text-decoration-line: none;
+    color: gainsboro;
+    height: inherit;
+  }
+
+  .navItemLink:hover {
+    background-color: #0f0475;
+    color: black;
+  }
+
+  /* POST INFO CSS */
+  .postTitle {
+    margin: 0;
+  }
+  .postSubmit {
+    margin-top: 1%;
+    margin-bottom: 5%;
+  }
+  .postComments {
+    margin-bottom: 1%;
+  }
+
+  /* VOTER CSS */
+  .voteContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+  }
+  .voteArrow {
+    cursor: pointer;
+  }
+  .voteCounter {
+    margin: 45% 0;
+  }
+  /* FEED CSS */
+  .feedContainer {
+    padding-bottom: 0.5%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 6%;
+  }
+
+  .postOnFeed {
+    margin-bottom: 4%;
+    padding: 2%;
+    border: 0.15rem solid grey;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem rgba(210, 215, 211, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: inherit;
+  }
+
+  .postImg {
+    width: 100%;
+    max-width: 125px;
+    max-height: 100px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* COMMENT MODAL CSS */
+
+  .commentModal {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .modalContent {
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    border-radius: 2rem;
+    padding: 1% 0;
+    border: 2px solid black;
+  }
+  .modalHeader {
+    margin-left: 3%;
+    font-size: 1.5rem;
+  }
+  .modalText {
+    width: 90%;
+    margin: 3%;
+    min-height: 150px;
+  }
+  .modalFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 6%;
+  }
+  .actionBtn {
+    font-size: 1rem;
+    width: 12%;
+    border-radius: 5px;
+    padding: 1% 0;
+    margin-left: 3%;
+    box-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.6);
+  }
+
+  /* COMMENT CSS */
+
+  .commentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+  .commentContainer {
+    border: 1px solid grey;
+    box-shadow: 0.5rem 0.5rem rgba(210, 215, 211, 1);
+    border-radius: 2rem;
+    padding: 1% 3% 3% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .commentVoter > * {
+    font-size: 1.25rem !important;
+    align-items: center;
+  }
+  .commentVoter {
+    height: 50%;
+    margin-right: 2%;
+  }
+
+  .commentUser {
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .commentDate {
+    margin-top: 1%;
+    font-size: 1.25rem;
+  }
+  .commentText {
+    font-size: 1.1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1.5%;
+    width: 100%;
+  }
+  .replyBtn {
+    border-radius: 2rem;
+    box-shadow: 0.15rem 0.15rem rgba(100, 105, 200, 1);
+  }
+
+  .nestCommentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    align-items: flex-start;
+  }
+  .nestComment {
+    align-self: flex-end;
+    width: 85%;
+  }
+  .nestComment > .commentText {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  /* POST FORM CSS */
+  .postFormContainer {
+    width: 100%;
+  }
+  .postForm {
+    border: 1px solid black;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 7px 7px grey;
+  }
+  .postFormLabel {
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+    text-decoration-line: underline;
+  }
+  .postFormInput {
+    font-size: 1.25rem;
+    margin-bottom: 2%;
+    width: 50%;
+  }
+  .postFormBtn {
+    font-size: 1.2rem;
+    width: 15%;
+    border-radius: 0.5rem;
+    background-color: royalblue;
+    margin-bottom: 2%;
+  }
+  .formSubmitError {
+    color: red;
+    font-weight: bold;
+    border: 2px solid red;
+    margin-bottom: 2%;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 2% 4%;
+    border-radius: 1rem;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+}
