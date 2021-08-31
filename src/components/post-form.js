@@ -3,7 +3,6 @@ import * as api from '../api';
 import * as routes from './routes';
 import { connect } from 'react-redux';
 
-
 class PostForm extends React.Component{
     constructor(props){
         super(props);
@@ -45,7 +44,6 @@ class PostForm extends React.Component{
         this.setState({ [input]: event.target.value });
     }
 
-
     render(){
         return(
             <div className='postFormContainer'>
@@ -77,6 +75,5 @@ class PostForm extends React.Component{
         )
     }
 }
-
 const mapStateToProps= (state,ownProps)=>({username:state.user.name, ...ownProps});
 export default connect(mapStateToProps)(PostForm);

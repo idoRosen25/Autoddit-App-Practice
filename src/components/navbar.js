@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import * as routes from './routes'
 
-
 const NavBar = ({loggedIn, username}) => (
 
   <div className='myNav'>
@@ -26,6 +25,5 @@ const NavBar = ({loggedIn, username}) => (
     </div>
   </div>
 );
-
 const fromStateToProps = ({user}) => ({loggedIn: user.loggedIn, username:user.name});
 export default connect(fromStateToProps)(NavBar);

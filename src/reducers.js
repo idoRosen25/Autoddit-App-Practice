@@ -24,7 +24,6 @@ const userReducer = (state=USER_INITIAL, {type, payload}) => {
   }
 }
 
-
 const postReducer = (state=POSTS_INITIAL, {type, payload, id}) => {
   switch (type) {
     case ADD_POSTS:
@@ -60,5 +59,4 @@ const rootReducer = combineReducers({
   posts: postReducer,
   comments: commentReducer
 });
-
 export default rootReducer;

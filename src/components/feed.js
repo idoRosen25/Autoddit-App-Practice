@@ -46,6 +46,5 @@ class FeedMain extends Component {
         );
       }
 }
-
 const mapStateToProps = (state, ownProps)=> ({posts:state.posts, user:state.user, ownProps});
 export default connect(mapStateToProps)(FeedMain);

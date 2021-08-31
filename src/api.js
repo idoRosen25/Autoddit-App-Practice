@@ -1,6 +1,5 @@
 let posts = require('./data/posts.json');
 let comments = require('./data/comments.json');
-
 import * as actions from './actions';
 
 export const getJSONPosts = ()=> new Promise((resolve)=>resolve(posts));
@@ -48,9 +47,9 @@ export const setCommentPost = (postId, comment) => {
     return (dispatch) => putComment(postId, comment).then((data) => dispatch(actions.addComment(data)))
   };
   
-  export const setCommentReply = (commentId, comment) => {
-    return (dispatch) => putReply(commentId, comment).then((data) => dispatch(actions.addComment(data)))
-  }
+export const setCommentReply = (commentId, comment) => {
+  return (dispatch) => putReply(commentId, comment).then((data) => dispatch(actions.addComment(data)))
+}
 
 export const putPost = (post) => {
     let nextId = Math.max(...Object.keys(posts)) + 1;
@@ -58,24 +57,24 @@ export const putPost = (post) => {
     return new Promise((resolve) => resolve({[nextId]: post}));
   };
   
-  export const putComment = (postId, comment) => {
-    let nextId = Math.max(...Object.keys(comments)) + 1;
-    comments = {...comments, [nextId]: comment};
-    posts[postId].comments.push(nextId);
-    return new Promise((resolve) => resolve({[nextId]: comment}));
-  };
+export const putComment = (postId, comment) => {
+  let nextId = Math.max(...Object.keys(comments)) + 1;
+  comments = {...comments, [nextId]: comment};
+  posts[postId].comments.push(nextId);
+  return new Promise((resolve) => resolve({[nextId]: comment}));
+};
   
-  export const putReply = (commentId, comment) => {
-    let nextId = Math.max(...Object.keys(comments)) + 1;
-    comments = {...comments, [nextId]: comment};
-    comments[commentId].comments.push(nextId);
-    return new Promise((resolve) => resolve({[nextId]: comment}));
-  };
+export const putReply = (commentId, comment) => {
+  let nextId = Math.max(...Object.keys(comments)) + 1;
+  comments = {...comments, [nextId]: comment};
+  comments[commentId].comments.push(nextId);
+  return new Promise((resolve) => resolve({[nextId]: comment}));
+};
   
-  export const voteOnPost = (id, type, upvotes) => (dispatch) => {
-    dispatch((type === actions.UPVOTE_POST) ? actions.upVotePost(id, upvotes) : actions.downVotePost(id, upvotes));
-  };
+export const voteOnPost = (id, type, upvotes) => (dispatch) => {
+  dispatch((type === actions.UPVOTE_POST) ? actions.upVotePost(id, upvotes) : actions.downVotePost(id, upvotes));
+};
   
-  export const voteOnComment = (id, type, upvotes) => (dispatch) => {
-    dispatch((type === actions.UPVOTE_COMMENT) ? actions.upVoteComment(id, upvotes) : actions.downVoteComment(id, upvotes));
-  }
+export const voteOnComment = (id, type, upvotes) => (dispatch) => {
+  dispatch((type === actions.UPVOTE_COMMENT) ? actions.upVoteComment(id, upvotes) : actions.downVoteComment(id, upvotes));
+}

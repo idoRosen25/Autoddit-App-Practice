@@ -14,7 +14,6 @@ export const REMOVE_COMMENT = 'REMOVE_COMMENT';
 export const UPVOTE_COMMENT = 'UPVOTE_COMMENT';
 export const DOWNVOTE_COMMENT = 'DOWNVOTE_COMMENT';
 
-
 export const updateUser = (name) => ({type: UPDATE_LOGIN, payload: {name, loggedIn: true}});
 
 export const addPost = (post) => ({type: ADD_POST, payload: post});

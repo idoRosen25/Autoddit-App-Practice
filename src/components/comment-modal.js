@@ -6,7 +6,6 @@ import {faComment} from '@fortawesome/free-solid-svg-icons';
 const CommentModal = ({modalOpen, triggerModal, onModalSubmit, onModalChange, modalFormValue}) => {
 
     const modalHeight =document.body.scrollHeight;
-
     return (
         <React.Fragment>
             {

@@ -5,10 +5,19 @@
         "upVotes":0,
         "postId":1,
         "parentId":null,
-        "comments":[2],
+        "comments":[3],
         "date": 1630072227452
     },
     "2":{
+        "user":"Ido Rosenblum",
+        "comment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, minus.",
+        "upVotes":0,
+        "postId":1,
+        "parentId":1,
+        "comments":[],
+        "date": 1630072227452
+    },
+    "3":{
         "user":"Ido Rosenblum",
         "comment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, minus.",
         "upVotes":0,

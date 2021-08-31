@@ -5,7 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
+
 /*DESKTOP CSS ONLY*/
+
 @media only screen and (min-width: 850px) {
   /* Login Page CSS */
 
@@ -27,11 +29,13 @@ html {
     border-radius: 10px;
     box-shadow: 2px 2px 7px 7px grey;
   }
+
   .loginLabel {
     margin-bottom: 2%;
     font-size: 1.5rem;
     text-decoration-line: underline;
   }
+
   .loginInput {
     font-size: 1.5rem;
     margin-bottom: 2%;
@@ -39,6 +43,7 @@ html {
     border-radius: 5px;
     padding: 0.5%;
   }
+
   .loginActionBtn {
     font-size: 1.5rem;
     width: 15%;
@@ -47,7 +52,6 @@ html {
   }
 
   /* NAVBAR CSS */
-
   .myNav {
     height: 10vh;
     font-size: 1.5rem;
@@ -82,6 +86,7 @@ html {
     justify-content: center;
     padding: 2% 1%;
   }
+
   .navItemLink > * {
     text-decoration-line: none;
     color: gainsboro;
@@ -97,10 +102,12 @@ html {
   .postTitle {
     margin: 0;
   }
+
   .postSubmit {
     margin-top: 1%;
     margin-bottom: 5%;
   }
+
   .postComments {
     margin-bottom: 1%;
   }
@@ -113,12 +120,15 @@ html {
     font-size: 1.5rem;
     justify-content: space-evenly;
   }
+
   .voteArrow {
     cursor: pointer;
   }
+
   .voteCounter {
     margin: 45% 0;
   }
+
   /* FEED CSS */
   .feedContainer {
     padding-bottom: 0.5%;
@@ -148,7 +158,6 @@ html {
   }
 
   /* COMMENT MODAL CSS */
-
   .commentModal {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 20;
@@ -167,21 +176,25 @@ html {
     padding: 1% 0;
     border: 2px solid black;
   }
+
   .modalHeader {
     margin-left: 3%;
     font-size: 1.5rem;
   }
+
   .modalText {
     width: 90%;
     margin: 3%;
     min-height: 150px;
   }
+
   .modalFooter {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 6%;
   }
+
   .actionBtn {
     font-size: 1rem;
     width: 12%;
@@ -192,12 +205,12 @@ html {
   }
 
   /* COMMENT CSS */
-
   .commentSection {
     display: flex;
     flex-direction: column;
     justify-content: right;
   }
+
   .commentContainer {
     border: 1px solid grey;
     box-shadow: 0.5rem 0.5rem rgba(210, 215, 211, 1);
@@ -213,6 +226,7 @@ html {
     font-size: 1.25rem !important;
     align-items: center;
   }
+
   .commentVoter {
     height: 50%;
     margin-right: 2%;
@@ -224,10 +238,12 @@ html {
     font-weight: bold;
     margin-bottom: 0;
   }
+
   .commentDate {
     margin-top: 1%;
     font-size: 1.25rem;
   }
+
   .commentText {
     font-size: 1.1rem;
     border-top: 1px solid black;
@@ -235,6 +251,7 @@ html {
     padding: 1.5%;
     width: 100%;
   }
+
   .replyBtn {
     border-radius: 2rem;
     box-shadow: 0.15rem 0.15rem rgba(100, 105, 200, 1);
@@ -247,10 +264,12 @@ html {
     margin-top: 3%;
     align-items: flex-start;
   }
+
   .nestComment {
     align-self: flex-end;
     width: 85%;
   }
+
   .nestComment > .commentText {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -261,6 +280,7 @@ html {
   .postFormContainer {
     width: 100%;
   }
+
   .postForm {
     border: 1px solid black;
     width: 70%;
@@ -272,16 +292,19 @@ html {
     border-radius: 2rem;
     box-shadow: 2px 2px 7px 7px grey;
   }
+
   .postFormLabel {
     font-size: 1.5rem;
     margin-bottom: 1%;
     text-decoration-line: underline;
   }
+
   .postFormInput {
     font-size: 1.25rem;
     margin-bottom: 2%;
     width: 50%;
   }
+
   .postFormBtn {
     font-size: 1.2rem;
     width: 15%;
@@ -289,6 +312,7 @@ html {
     background-color: royalblue;
     margin-bottom: 2%;
   }
+
   .formSubmitError {
     color: red;
     font-weight: bold;

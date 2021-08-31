@@ -6,8 +6,6 @@ import Votes from './votes';
 import strTime from 'strftime';
 import React from "react";
 
-
-
 class AutodditCommentComponent extends React.Component{
     constructor(props){
         super(props);

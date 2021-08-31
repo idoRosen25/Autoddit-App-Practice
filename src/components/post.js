@@ -8,7 +8,6 @@ import AutodditComment from './comment';
 import CommentModal from './comment-modal';
 const strTime = require('strftime');
 
-
 const ShowComments = ({showComments, comments, postId}) => {
   console.log("openede comments");
     return (showComments) ? (
@@ -90,7 +89,6 @@ class Post extends React.Component {
     
         this.setState({commentsCount: Object.keys(comments).length, nestedComments: commentsNestedObject});
     }
-
       
     render(){
         return (
@@ -120,7 +118,5 @@ class Post extends React.Component {
         )
     }
 }
-
 const mapStateToProps = (state, ownProps) => ({username:state.user.name, comments: state.comments, ...ownProps});
 export default connect(mapStateToProps)(Post);
-
